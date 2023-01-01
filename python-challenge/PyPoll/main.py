@@ -47,7 +47,7 @@ for entry in summary:
     print(entry)
 print(f"Winner: {winner}")
 
-output_file = os.path.join("PyPoll_output.txt")
+output_file = os.path.join("analysis", "PyPoll_output.txt")
 with open(output_file, "w") as datafile:
     writer = csv.writer(datafile)
     writer.writerow(["Election Results"])
