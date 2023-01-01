@@ -29,19 +29,14 @@ percent_numbers = [f'{n}%' for n in percentage]
 candidate_colon = [f'{c}:' for c in candidate]
 
 summary = zip(candidate_colon,percent_numbers,total_votes)
-#summary_list = list(summary)
 
 max_val = max(total_votes)
 index = total_votes.index(max_val)
 length = len(total_votes)
 winner = candidate[index]
-#print(summary_list)
 
 
 print(f"Total Votes: {count}")
-#print(candidate)
-#print(percentage)
-#print(total_votes)
 
 for entry in summary:
     print(entry)
