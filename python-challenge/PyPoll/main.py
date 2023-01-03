@@ -51,7 +51,5 @@ with open(output_file, "w") as datafile:
     writer.writerow([f"Total Votes: {count}"])
     writer.writerow(["----------------------------"])
     writer.writerows(summary_list)
-#    for entry in summary:
-#        writer.writerow(entry)
     writer.writerow(["----------------------------"])
     writer.writerow([f"Winner: {winner}"])
