@@ -37,9 +37,10 @@ winner = candidate[index]
 
 
 print(f"Total Votes: {count}")
-
+summary_list = []
 for entry in summary:
     print(entry)
+    summary_list.append(entry)
 print(f"Winner: {winner}")
 
 output_file = os.path.join("analysis", "PyPoll_output.txt")
@@ -49,7 +50,7 @@ with open(output_file, "w") as datafile:
     writer.writerow(["----------------------------"])
     writer.writerow([f"Total Votes: {count}"])
     writer.writerow(["----------------------------"])
-    writer.writerows(summary)
+    writer.writerows(summary_list)
 #    for entry in summary:
 #        writer.writerow(entry)
     writer.writerow(["----------------------------"])
